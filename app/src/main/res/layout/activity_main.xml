@@ -40,4 +40,18 @@
             app:layout_constraintTop_toBottomOf="@+id/hidden_card" app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.25" app:layout_constraintVertical_bias="0.75"/>
+    <TextView
+            android:text="Cards left:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cards_left_label"
+            app:layout_constraintTop_toTopOf="@+id/shown_card" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="16dp" android:layout_marginStart="16dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cards_left_value" tools:text="20"
+            app:layout_constraintTop_toBottomOf="@+id/cards_left_label" android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"/>
 </android.support.constraint.ConstraintLayout>
