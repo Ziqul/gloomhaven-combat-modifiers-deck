@@ -5,15 +5,39 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity" android:id="@+id/main_layout" android:background="@drawable/bg_main">
 
-    <TextView
+    <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-
+            app:srcCompat="@drawable/card_back"
+            tools:srcCompat="@drawable/card_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" android:id="@+id/hidden_card"
+            app:layout_constraintVertical_bias="0.25"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:srcCompat="@drawable/card_back"
+            android:id="@+id/shown_card"
+            app:layout_constraintTop_toTopOf="@+id/hidden_card"
+            android:layout_marginTop="40dp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+            android:text="Next"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/next_card_button"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hidden_card" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.75" app:layout_constraintVertical_bias="0.75"/>
+    <Button
+            android:text="Shuffle"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/shuffle_button"
+            app:layout_constraintTop_toBottomOf="@+id/hidden_card" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.25" app:layout_constraintVertical_bias="0.75"/>
 </android.support.constraint.ConstraintLayout>
