@@ -1,6 +1,5 @@
 <resources>
-    <string name="app_name">gcmd</string>
-    <string name="app_name_full">Gloomhaven Combat Modifiers Deck</string>
+    <string name="app_name">Gloomhaven Combat Modifiers Deck</string>
     <string-array name="default_deck">
         <item>card_default_zero|6</item>
         <item>card_default_minus1|5</item>
