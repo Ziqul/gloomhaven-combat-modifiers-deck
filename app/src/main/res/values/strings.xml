@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Gloomhaven Combat Modifiers Deck</string>
+    <string name="app_name">gcmd</string>
+    <string name="app_name_full">Gloomhaven Combat Modifiers Deck</string>
 </resources>
